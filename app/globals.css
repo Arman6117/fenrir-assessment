@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F5F5F5;
+  --foreground: #1A1A1A;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary-accent:#0CC8A8;
+  --color-primary:#2DD4BF;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -19,6 +21,16 @@
   }
 }
 
+.login-gradient {
+  background: linear-gradient(
+    90deg,
+    #0b2a26 0%,
+    #0a3530 20%,
+    #0aa38a 42%,
+    #d8651f 75%,
+    #6b1f15 100%
+  );
+}
 body {
   background: var(--background);
   color: var(--foreground);
